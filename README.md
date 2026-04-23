@@ -1,14 +1,14 @@
-# Evaluación Técnica Salesforce Developer - Admecore
+# Evaluación Técnica Salesforce Developer
 
-## 🚀 La Solución: "El Puente de Ventas a Ejecución"
+## La Solución: "El Puente de Ventas a Ejecución"
 Este proyecto implementa una solución integral para **Acme Services**, cerrando la brecha entre el equipo de Ventas (Oportunidades) y el de Ejecución (Engagements). Resuelve la falta de visibilidad en las actividades de consultoría mediante un centro de gestión centralizado, generación automatizada de tareas y reportes en tiempo real.
 
-### 🎥 Video de Demostración
+### Video de Demostración
 [Ver Demo en Loom](https://www.loom.com/share/83237fcdd4d74ce5b9d07b3e38ccbadf)
 
 ---
 
-## 🏗️ Arquitectura Técnica y Características Clave
+## Arquitectura Técnica y Características Clave
 
 ### 1. Estrategia del Modelo de Datos
 - **Objeto Personalizado:** `Engagement__c` (Relacionado con Cuenta, Contacto y Oportunidad).
@@ -29,7 +29,7 @@ Este proyecto implementa una solución integral para **Acme Services**, cerrando
 
 ---
 
-## 🛠️ Experiencia del Desarrollador (DX) y Configuración
+## Experiencia del Desarrollador (DX) y Configuración
 
 Para facilitar un proceso de revisión limpio y repetible, he incluido **Scripts de Automatización**:
 
@@ -47,7 +47,7 @@ sf apex run --file scripts/apex/cleanup_all.apex
 
 ---
 
-## 📂 Estructura del Proyecto
+## Estructura del Proyecto
 - `force-app/main/default/lwc/engagementSummary/`: Lógica de UI.
 - `force-app/main/default/classes/EngagementController.cls`: Lógica de Servidor.
 - `scripts/apex/`: Scripts de Automatización y Semilla de datos.
