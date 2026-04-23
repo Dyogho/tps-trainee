@@ -1,0 +1,32 @@
+<template>
+  <lightning-card title="Engagement Summary" icon-name="standard:service_report">
+    <lightning-button-icon icon-name="utility:refresh" slot="actions" variant="border-filled" onclick={handleRefresh}
+      alternative-text="Refresh Stats" title="Refresh Stats">
+    </lightning-button-icon>
+    <div class="slds-p-around_medium">
+      <div class="slds-grid slds-gutters slds-m-bottom_medium">
+        <div class="slds-col">
+          <p class="slds-text-title_caps">Opp Amount</p>
+          <p class="slds-text-heading_medium">
+            <lightning-formatted-number value={oppAmount} format-style="currency"></lightning-formatted-number>
+          </p>
+        </div>
+      </div>
+
+      <div class="slds-grid slds-gutters slds-m-bottom_medium">
+        <div class="slds-col">
+          <p class="slds-text-title_caps">Completed Tasks</p>
+          <p>{stats.completedTasks}</p>
+        </div>
+        <div class="slds-col">
+          <p class="slds-text-title_caps">Upcoming Events</p>
+          <p>{stats.upcomingEvents}</p>
+        </div>
+      </div>
+
+      <lightning-button label="Quick Follow-Up Call" variant="brand" onclick={handleQuickCall}
+        class="slds-m-top_medium">
+      </lightning-button>
+    </div>
+  </lightning-card>
+</template>
