@@ -46,7 +46,6 @@ Engagement__c eng = new Engagement__c(
     Related_Opportunity__c = opp.Id,
     Status__c = 'In Progress',
     Start_Date__c = Date.today().addDays(-15),
-    // End_Date__c = Date.today().addMonths(2), // Verify if this field exists in your org
     Budget__c = 25000
 );
 insert eng;
